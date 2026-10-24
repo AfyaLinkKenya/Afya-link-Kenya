@@ -1,0 +1,49 @@
+
+<header class="topbar">
+  <div class="brand">Afya<span>Link</span> Kenya</div>
+  <p>Healthcare information, closer to you.</p>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <span class="eyebrow">YOUR HEALTHCARE DIRECTORY</span>
+    <h1>Find care.<br>Know your options.</h1>
+    <p>Explore hospitals, pharmacies and medicine prices across Kenya.</p>
+
+    <label for="location">Town or county</label>
+    <input id="location" type="text" placeholder="e.g. Nairobi, Kisumu">
+
+    <label for="search">What are you looking for?</label>
+    <input id="search" type="search" placeholder="Hospital, pharmacy or medicine">
+
+    <div class="search-actions">
+      <button id="searchBtn" type="button">Search directory</button>
+      <button id="clearBtn" class="secondary" type="button">Clear</button>
+    </div>
+  </section>
+
+  <section class="category-section">
+    <h2>Explore AfyaLink</h2>
+    <div class="categories">
+      <button class="category active" data-category="hospitals" type="button">🏥 Hospitals</button>
+      <button class="category" data-category="pharmacies" type="button">💊 Pharmacies</button>
+      <button class="category" data-category="medicines" type="button">🩺 Medicines &amp; prices</button>
+    </div>
+  </section>
+
+  <section class="results-section">
+    <div class="results-heading">
+      <h2 id="resultsTitle">Hospitals</h2>
+      <span id="resultCount"></span>
+    </div>
+    <p id="status" role="status">Ready. Search to explore the directory.</p>
+    <div id="results"></div>
+  </section>
+
+  <section class="disclaimer">
+    <strong>Important health information</strong>
+    <p>Confirm current prices, medicine availability, facility details and pharmacy licensing directly with the relevant provider or authority. This directory does not replace professional medical advice.</p>
+  </section>
+</main>
+
+<footer>AfyaLink Kenya · Better access to healthcare information</footer>
